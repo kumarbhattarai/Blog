@@ -12,7 +12,7 @@ const Blogs=require('./model/blog')
 const app=express();
 const port=process.env.PORT||3000;
  connection(process.env.MONGO_URL);
- console.log(process.env.MONGO_URL);
+//  console.log(process.env.MONGO_URL);
 app.set('view engine','ejs');
 app.set('views',path.resolve('./views'));
 

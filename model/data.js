@@ -37,7 +37,7 @@ const hash = createHmac('sha256', salt)
                .digest('hex');
                this.salt=salt;
               this.password=hash;
-console.log(salt);
+// console.log(salt);
 next();
 })
 const User=mongoose.model('users',userschema);

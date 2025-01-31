@@ -57,7 +57,7 @@ router.post('/addcomment/:blogid',async (req,res)=>{
         user:req.user._id,
         blog:req.params.blogid,
     })
-    console.log(cont);
+    // console.log(cont);
     return res.redirect(`/blog/${req.params.blogid}`);
 })
 

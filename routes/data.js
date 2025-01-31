@@ -15,7 +15,7 @@ router.get('/signout',(req,res)=>{
     return res.redirect('/');
 })
 router.post('/signup',async (req,res)=>{// for user registration
-    console.log(req.body);
+    // console.log(req.body);
 const {fullname,email,password}=req.body
 if (!fullname || !email || !password) {
     res.send('All fields are required');
@@ -43,7 +43,7 @@ router.post('/signin', async (req, res) => {
 
     if (hash === user.password) {
       const token = createtokenforuser(user);
-      console.log(token);
+      // console.log(token);
 
       return res.cookie("token", token).redirect('/');
     } else {
