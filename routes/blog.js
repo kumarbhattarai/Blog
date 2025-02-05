@@ -33,7 +33,7 @@ router.post("/",upload.single('coverimage') ,async(req,res)=>{
         coverimageurl:`/uploads/${req.file.filename}`,
         createdby:req.user._id,
     })
-// console.log(blog.coverimageurl);
+// console.log(req.body);
 // console.log(req.file);
 return res.redirect(`/blog/${blog._id}`);//This might show an error, if it does replace blog by blogs !!!!!!
 })
